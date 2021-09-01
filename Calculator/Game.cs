@@ -10,10 +10,9 @@ namespace Calculator
         void Calculator()
         {
             // Instantiate variable
-            float num1 =0;
+            float num1;
             float num2;
             float answer;
-
 
             // User requires to input any number 
             // "Convert.ToInt32" convert the given input into integer
@@ -38,10 +37,7 @@ namespace Calculator
             }
 
 
-
-
             Console.Write("Please enter an operand (+, -, /, *): ");
-
 
 
             // Get input from user
@@ -84,24 +80,19 @@ namespace Calculator
 
             // Show user their answer
             Console.WriteLine("Answer: " + answer);
-
-            // Unused code
-            // Console.WriteLine("Attempted to divide by zero");
-
         }
         public void Run()
         {
-
+            string input = Console.ReadLine();
             // Stop the program
             bool stop = false;
 
+            
             while (!stop)
             {
-                
                 Calculator();
                 stop = true;
             }
-
 
         }
     }
